@@ -1,47 +1,73 @@
-![Netlify examples](netlify-badge-examples.png)
+###DENPAR854_PTO2306_GroupA_DenelleParsuramen_DWACapstone
 
-# Netlify Feature Tour
+###PodCastor - Podcast Streaming Platform
+This project is built using Create React App and provides users with an interactive interface to browse, search, and favorite podcast shows and episodes. Users can filter by genre, search using fuzzy search, and manage their favorite shows and episodes.
 
-**Access this demo site**: https://feature-tour.netlify.app
+###Available Scripts
+In the project directory, you can run:
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fad6792e-1c44-44db-bd79-ea74b42b0f89/deploy-status)](https://app.netlify.com/sites/feature-tour/deploys)
+###npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.
 
-## About this example site
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-This site provides a path to get started learning about Netlify features.
+###npm test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
 
-- 📚 [Docs Getting Started Tutorial](https://docs.netlify.com/get-started/?utm_medium=social&utm_source=github&utm_campaign=devex-ph&utm_content=devex-examples)
+###npm run build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Speedily deploy your own version
+The build is minified and the filenames include the hashes.
+Your app is ready to be deployed!
 
-Deploy your own version of this example site by selecting the Deploy to Netlify Button below. This will automatically:
+###npm run eject
+Note: this is a one-way operation. Once you eject, you can't go back!
 
-- Clone a copy of this repo to your own GitHub account
-- Create a new project in your [Netlify account](https://app.netlify.com/?utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples), linked to your new repo
-- Create an automated deployment pipeline to watch for changes on your repo
-- Build and deploy your new site
+###Key Features
+Browse Shows: Users can browse through a list of podcast shows, view show details, and explore episodes.
+Search by Title: Use the search bar to search for shows by title.
+Fuzzy Search: Users can perform fuzzy searches on show titles and descriptions using Fuse.js.
+Sort Shows: Sort shows by title (A-Z or Z-A) or by last updated date (ascending or descending).
+Filter by Genre: Users can filter shows by clicking on genre labels.
+Favorites: Mark shows and episodes as favorites, and view a list of all your favorite shows and episodes.
+Persistent Favorites: Favorites are stored locally and synced between sessions.
+Playback: Each episode has a built-in audio player for listening to podcast episodes.
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-feature-tour&utm_medium=social&utm_source=github&utm_campaign=devex&utm_content=devex-examples)
+###Project Setup
+-Clone the repository:
+-bash
+-Copy code
+-git clone https://github.com/your-repository-url.git
+-Navigate into the project directory:
+-bash
+-Copy code
+-cd podcastor
+-Install dependencies:
+-Copy code
+-npm install
+-Run the app:
+-npm start
 
-## Install and run this example locally
+###Project Structure
+The project follows a modular component-based structure:
 
-You can clone this example repo to explore its features and implementation and to run it locally.
+###components/: Contains all the React components for the app such as Home, ShowPreview, Favorites, etc.
+###Styles/: Custom CSS styles for each component are stored here.
+###CallingApi.js: This file contains API calls for fetching podcast shows and episodes from an external API.
+###FavoriteHeart.js: Component for displaying and toggling the favorite heart icon for shows and episodes.
 
-```shell
+###Learn More
+You can learn more in the Create React App documentation. To learn React, check out the React documentation.
 
-# 1. Clone the repository to your local development environment
-git clone git@github.com:netlify/feature-tour.git
+Advanced Configuration
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-# 2. Move into the project directory
-cd feature-tour
+Deployment
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-# 3. Install code dependencies
-npm install
-
-# 4. Install the Netlify CLI to let you locally serve your site using Netlify's features
-npm install -g netlify-cli
-
-# 5. Serve your site using Netlify Dev
-netlify dev
-
-```
+npm run build fails to minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
